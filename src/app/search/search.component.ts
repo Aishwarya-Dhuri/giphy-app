@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GifsdataService } from '../gifsdata.service';
 
 @Component({
   selector: 'app-search',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dataservice:GifsdataService) { }
 
   ngOnInit() {
+   
   }
+  search(searchTerm:string){
+    if(searchTerm !== ''){
+      this.dataservice.searchGifs(searchTerm);
+     
+    }
 
+  }
 }
