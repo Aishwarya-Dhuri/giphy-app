@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 import { GifsComponent } from './gifs/gifs.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchComponent,
-    GifsComponent
+    GifsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

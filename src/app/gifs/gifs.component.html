@@ -1,6 +1,7 @@
-<div class="gifs">
-    <div class="gif" *ngFor="let gif of gifs">
-        <img [src]="gif.images.fixed_height.url" alt="">
+<div class="card-columns">
+    <div *ngFor="let gif of gifs">
+        <div class="card">
+            <img src="{{gif.images.preview_webp.url}}" alt="" width="100%">
+        </div>
     </div>
-
 </div>

@@ -1,11 +1,57 @@
 .search {
-  max-width: 600px;
-  margin: 30px auto;
   text-align: center;
   font-size: 18px;
+  background-image: linear-gradient(90deg, #b35400, #fe6c00);
+
+  width: 100%;
+  display: flex;
+  padding: 70px 0 100px 0;
+  justify-content: center;
+  margin-bottom: 70px;
+  .searchcontainer {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .searchheading {
+    color: white;
+    font-family: "MyridProRegular";
+    font-size: 50px;
+    font-weight: 400;
+  }
+  .subtext {
+    color: white;
+    font-family: "MyridProRegular";
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .input-group-addon {
+    background-color: #000;
+    padding: 16px;
+    display: inline-block;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    i {
+      color: #fff;
+    }
+  }
   .searchbox {
     width: 100%;
-    padding: 8px 16px;
+    padding: 15px 15px;
+    margin: 20px 0 40px 0;
+    border: none;
+    max-width: 65%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family: "MuseoSlab300";
+    font-size: 18px;
+    &::placeholder {
+      color: #becbd1;
+    }
+  }
+  p {
+    color: white;
+    font-family: "MuseoSlab300";
+    font-size: 18px;
     margin-top: 20px;
   }
 }
