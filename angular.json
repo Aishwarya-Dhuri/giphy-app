@@ -28,7 +28,6 @@
               "src/assets"
             ],
             "styles": [
-              
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,8 +122,13 @@
               "devServerTarget": "giphy-app:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "giphy-app"
 }
