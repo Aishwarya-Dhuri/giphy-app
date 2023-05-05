@@ -14,10 +14,6 @@ export class SearchComponent implements OnInit {
    
   }
   search(searchTerm:string){
-    if(searchTerm !== ''){
       this.dataservice.searchGifs(searchTerm);
-     
-    }
-
   }
 }
